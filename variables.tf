@@ -6,7 +6,6 @@ variable "project_environment" {
   type = string
 }
 
-
 variable "cors_allowed_headers" {
   type    = list(string)
   default = ["*"]

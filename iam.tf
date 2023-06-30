@@ -13,7 +13,7 @@ resource "aws_iam_group_policy_attachment" "api_group_api_bucket_full_access" {
 }
 
 resource "aws_iam_user" "api_user" {
-  name = "${var.project_name}-django-${var.project_environment}-api-user"
+  name = "${var.project_name}-${var.project_environment}-api-user"
 }
 
 resource "aws_iam_access_key" "api_user_access_key" {

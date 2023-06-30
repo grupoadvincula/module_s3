@@ -18,3 +18,7 @@ data "aws_iam_policy_document" "api_resources_bucket_full_access" {
     ]
   }
 }
+
+data "http" "current_date" {
+  url = "http://worldtimeapi.org/api/ip"
+}
